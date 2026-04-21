@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Ambiente
+.env
+.venv/
+venv/
+
+# Databricks
+.databricks/
+*.dbc
+
+# Logs e artefatos locais
+*.log
+mlruns/
+mlartifacts/
+
+# Checkpoints Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
