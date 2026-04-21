@@ -105,9 +105,9 @@ Além das 21 colunas originais do dataset, o Notebook 04 cria três features der
 
 | Modelo | AUC-ROC | F1-Score | Status |
 |--------|---------|----------|--------|
-| Logistic Regression | 0.84 | 0.78 | — |
-| Random Forest | 0.86 | 0.80 | — |
-| **GBT (Gradient Boosted Trees)** | **0.87** | **0.81** | **Campeão ✓** |
+| **Logistic Regression** | **0.82** | **0.78** | **Campeão ✓** |
+| Random Forest | 0.81 | 0.80 | — |
+| GBT (Gradient Boosted Trees) | 0.82 | 0.81 
 
 O modelo campeão é selecionado automaticamente pelo maior AUC-ROC e registrado no Unity Catalog Model Registry como `workspace.default.telco-churn-predictor` versão 1.
 
