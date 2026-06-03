@@ -20,7 +20,9 @@
 
 Pipeline de Machine Learning end-to-end construído para prever cancelamento (churn) de clientes de uma operadora de telecomunicações. O projeto cobre o fluxo completo de MLOps: ingestão de dados brutos, limpeza, análise exploratória, feature engineering distribuído, treinamento e comparação de modelos, registro no Model Registry e geração de predições em batch com classificação de risco por cliente.
 
-**Dataset:** [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle) — 7.043 clientes, 21 variáveis, ~26% de churn.
+**Dataset baixado via csv:** [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle) — 7.043 clientes, 21 variáveis, ~26% de churn.
+
+**Foi realizado o upload no Databricks como uma tabela dentro do schema.** 
 
 ---
 
