@@ -1,5 +1,4 @@
 <div align="center">
-
 # Databricks ML Pipeline — Telco Churn
 
 ### Pipeline completo de Machine Learning para predição de churn em telecom
