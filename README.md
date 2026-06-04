@@ -16,6 +16,18 @@
 
 ---
 
+<div align="center">
+
+### 🌐 Página de Apresentação do Projeto
+
+**[→ Ver Portfólio Completo](https://spark-churn.projetoathos.com.br)**
+
+*Arquitetura · Stack técnica · Destaques de engenharia · Como rodar*
+
+</div>
+
+---
+
 ## Visão Geral
 
 Pipeline de Machine Learning end-to-end construído para prever cancelamento (churn) de clientes de uma operadora de telecomunicações. O projeto cobre o fluxo completo de MLOps: ingestão de dados brutos, limpeza, análise exploratória, feature engineering distribuído, treinamento e comparação de modelos, registro no Model Registry e geração de predições em batch com classificação de risco por cliente.
@@ -108,9 +120,9 @@ Além das 21 colunas originais do dataset, o Notebook 04 cria três features der
 |--------|---------|----------|--------|
 | **Logistic Regression** | **0.82** | **0.78** | **Campeão ✓** |
 | Random Forest | 0.81 | 0.80 | — |
-| GBT (Gradient Boosted Trees) | 0.82 | 0.81 
+| GBT (Gradient Boosted Trees) | 0.82 | 0.81 | — |
 
-O modelo campeão é selecionado automaticamente pelo maior AUC-ROC e registrado no Unity Catalog Model Registry como `workspace.default.telco-churn-predictor` versão 1.
+O modelo campeão é selecionado automaticamente pelo maior AUC-ROC e registrado no Unity Catalog Model Registry como `portfolio.default.telco-churn-predictor` versão 1.
 
 ---
 
@@ -133,26 +145,26 @@ O modelo campeão é selecionado automaticamente pelo maior AUC-ROC e registrado
 ### Pré-requisitos
 
 - Workspace Databricks com Serverless habilitado
-- Unity Catalog configurado com catálogo `workspace` e schema `default`
-- Dataset `WA_Fn-UseC_-Telco-Customer-Churn.csv` disponível em `/Volumes/workspace/default/dados/`
+- Unity Catalog configurado com catálogo `portfolio` e schema `default`
+- Dataset `WA_Fn-UseC_-Telco-Customer-Churn.csv` disponível em `/Volumes/portfolio/default/dados/`
 
 ### Configurações
 
 ```python
-CATALOG = "workspace"
+CATALOG = "portfolio"
 SCHEMA  = "default"
 
 # Tabelas criadas automaticamente pelos notebooks
-workspace.default.telco_bronze
-workspace.default.telco_silver
-workspace.default.telco_gold
-workspace.default.telco_predictions
+portfolio.default.telco_bronze
+portfolio.default.telco_silver
+portfolio.default.telco_gold
+portfolio.default.telco_predictions
 
 # Modelo registrado
-workspace.default.telco-churn-predictor  (versão 1)
+portfolio.default.telco-churn-predictor  (versão 1)
 
 # Pipeline serializado
-/Volumes/workspace/default/modelos_ml/pipeline_model
+/Volumes/portfolio/default/modelos_ml/pipeline_model
 ```
 
 ### Ordem de Execução
